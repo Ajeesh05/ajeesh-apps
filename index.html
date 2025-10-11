@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ajeesh Apps – Useful Web Tools for Modern Workflows</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CSS CDN for utility-first, responsive design -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/52854320?s=120&v=4">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .transition {
+      transition: background 0.3s, color 0.3s;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Smooth card hover */
+    .hovercard {
+      transition: transform .16s, box-shadow .16s;
+    }
+
+    .hovercard:hover {
+      transform: translateY(-4px) scale(1.025);
+      box-shadow: 0 6px 20px #23e8bc24;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition min-h-screen">
+
+  <!-- ================= Navigation Bar ================= -->
+  <nav class="sticky top-0 z-30 bg-white dark:bg-gray-950 border-b border-gray-200 dark:border-gray-800 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
+      <!-- Brand/Logo -->
+      <a href="index.html">
+        <div class="flex items-center gap-2">
+          <img src="https://avatars.githubusercontent.com/u/52854320?s=120&v=4" alt="Ajeesh Apps logo"
+            class="w-8 h-8 rounded-full" />
+          <span class="font-bold text-lg dark:text-white">Ajeesh Apps</span>
+        </div>
+      </a>
+      <!-- Mobile Nav Toggle -->
+      <button id="mobileNavToggle" class="md:hidden">
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Links -->
+    <div id="mobileNav" class="md:hidden hidden px-6 py-2">
+      <a href="#home" class="block py-1 hover:text-teal-500 dark:hover:text-teal-300">Home</a>
+      <a href="#about" class="block py-1 hover:text-teal-500 dark:hover:text-teal-300">About</a>
+      <a href="#projects" class="block py-1 hover:text-teal-500 dark:hover:text-teal-300">Projects</a>
+      <a href="#contact" class="block py-1 hover:text-teal-500 dark:hover:text-teal-300">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ================= Hero / Intro ================= -->
+  <section id="home" class="pt-20 pb-14 flex flex-col items-center text-center bg-white dark:bg-gray-900">
+    <img src="https://avatars.githubusercontent.com/u/52854320?s=120&v=4" alt="Ajeesh avatar"
+      class="w-20 h-20 mb-4 rounded-full shadow-lg">
+    <h1 class="text-3xl md:text-5xl font-extrabold dark:text-white mb-3">Building Web Apps that Transform Everyday
+      Browsing</h1>
+    <p class="max-w-xl text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-6">
+      Welcome to <span class="font-semibold text-teal-600 dark:text-teal-400">Ajeesh Apps</span> — a thoughtfully built
+      collection of practical tools and Chrome extensions designed to automate tasks, simplify workflows, and enhance
+      your everyday digital experience.
+    </p>
+    <span class="text-gray-500 dark:text-gray-400 text-sm">Innovative. Free. No signup needed.</span>
+  </section>
+
+  <!-- ================= About Section ================= -->
+  <section id="about" class="bg-gray-100 dark:bg-gray-800 py-14">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4 dark:text-white">About</h2>
+      <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-8 mb-3 hovercard">
+        <p class="mb-6 text-gray-600 dark:text-gray-400 text-lg">
+          <span class="font-bold text-teal-600 dark:text-teal-400">Hi, I'm Ajeesh</span> — a software engineer
+          passionate about building digital tools that make life online simpler, smarter, and more productive.
+        </p>
+        <p class="text-gray-700 dark:text-gray-300 text-base mb-6">
+          I create user-focused, high-performance apps and Chrome extensions designed to automate the boring, keep
+          things organized, and help you work effortlessly from anywhere.
+        </p>
+        <blockquote class="italic border-l-4 pl-4 border-teal-500 text-teal-700 dark:text-teal-200 text-lg">
+          My goal is simple — to give people more time, fewer hassles, and a digital experience that feels effortless
+          and inspiring.
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Projects / Extensions ================= -->
+  <section id="projects" class="py-14 bg-white dark:bg-gray-900">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-7 dark:text-white text-center">Featured Project</h2>
+      <div class="flex flex-col md:flex-row gap-8 justify-center items-stretch">
+        <!-- Gmeet Kit Card -->
+        <div
+          class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-7 flex-1 shadow hovercard flex flex-col items-center text-center">
+          <img
+            src="https://lh3.googleusercontent.com/bC-8FsNpOmZWZMcFaHg0jXF9HPfeaEeAqypJM5dUP0Jj48Tx3gQ_O4Onk6lOvPct04x7w_2Ne-OUWqN5RrtOmf4Zcw=s60"
+            class="w-14 h-14 mb-2" alt="Gmeet Kit Logo">
+          <div class="font-bold text-lg dark:text-white mb-1">Gmeet Kit</div>
+          <div class="mb-3 text-gray-700 dark:text-gray-300 text-base">
+            Revamp your Google Meet calls with features like auto-mute, streamlined meeting links, attendance tracking,
+            and distraction-free modes—all at the click of a button.
+          </div>
+          <a href="extensions/gmeet-kit/"
+            class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full px-7 py-2 shadow transition mb-1">
+            Discover Gmeet Kit
+          </a>
+          <span class="text-gray-500 dark:text-gray-400 text-xs">Always free. No bloat. Just productivity.</span>
+        </div>
+        <!-- Add more cards for future extensions here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Contact Section ================= -->
+  <section id="contact" class="py-14 bg-gray-100 dark:bg-gray-800">
+    <div class="max-w-2xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold dark:text-white mb-4">Let’s Connect</h2>
+      <p class="mb-5 text-gray-700 dark:text-gray-300">
+        Questions, collaboration ideas, or just want to say hi? Drop a line anytime.
+      </p>
+      <div class="flex items-center justify-center space-x-6 mb-2">
+        <a href="mailto:ajeeshext@gmail.com"
+          class="underline hover:text-blue-600 dark:hover:text-blue-400 text-base font-semibold">
+          ajeeshext@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/ajeesh-t-a51b4a229" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg class="w-6 h-6 text-gray-400 hover:text-teal-500 dark:hover:text-teal-300 inline-block"
+            fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M4.98 3.5C3.32 3.5 2 4.82 2 6.48c0 1.63 1.33 2.98 2.98 2.98A2.98 2.98 0 008 6.48C8 4.82 6.67 3.5 4.98 3.5zM2 20h6v-9H2v9zm7.5-9h5.09v1.26h.07c.71-1.17 2.44-2.4 5.04-2.4 5.39 0 6.39 3.54 6.39 8.14V20h-6v-4.03c0-.96-.02-2.19-1.34-2.19-1.36 0-1.58 1.06-1.58 2.13V20h-6v-9z" />
+          </svg>
+        </a>
+        <a href="https://github.com/Ajeesh05" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg class="w-6 h-6 text-gray-400 hover:text-teal-500 dark:hover:text-teal-300 inline-block"
+            fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 2C6.477 2 2 6.483 2 12.013c0 4.422 2.867 8.17 6.839 9.504.5.088.682-.217.682-.482 0-.237-.008-.868-.013-1.703-2.782.604-3.37-1.344-3.37-1.344-.454-1.156-1.11-1.464-1.11-1.464-.909-.621.069-.609.069-.609 1.003.07 1.533 1.03 1.533 1.03.893 1.534 2.341 1.093 2.91.836.09-.646.35-1.092.635-1.344-2.22-.253-4.554-1.112-4.554-4.945 0-1.092.392-1.984 1.037-2.684-.104-.252-.451-1.272.098-2.654 0 0 .85-.271 2.783 1.025A9.68 9.68 0 0112 7.067c.86.004 1.724.116 2.534.34 1.935-1.296 2.783-1.025 2.783-1.025.55 1.382.203 2.402.099 2.654.646.7 1.037 1.592 1.037 2.684 0 3.841-2.337 4.688-4.566 4.937.36.308.679.919.679 1.854 0 1.338-.013 2.418-.013 2.748 0 .268.18.577.688.48A10.013 10.013 0 0022 12.013C22 6.483 17.523 2 12 2z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Footer ================= -->
+  <footer class="bg-gray-900 text-gray-300 dark:bg-black py-6 mt-8">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <div>&copy; <span id="currentYear"></span> Ajeesh Apps. Crafted with passion in code.</div>
+      <div class="flex space-x-6 mt-2 md:mt-0">
+        <a href="privacy.html" class="hover:text-white" aria-label="Privacy Policy">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= JS: Mobile Nav ================= -->
+  <script>
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+    // Mobile nav toggling
+    const mobileNavToggle = document.getElementById('mobileNavToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    if (mobileNavToggle && mobileNav) {
+      mobileNavToggle.addEventListener('click', function () {
+        mobileNav.classList.toggle('hidden');
+      });
+    }
+  </script>
+
+
+  <!-- ================= END OF PAGE ================= -->
+</body>
+
+</html>

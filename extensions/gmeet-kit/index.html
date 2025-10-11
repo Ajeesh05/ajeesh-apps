@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gmeet Kit – Enhance Your Google Meet Experience</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CSS CDN for rapid styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts for professional typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Favicon placeholder -->
+  <link rel="icon"
+    href="https://lh3.googleusercontent.com/bC-8FsNpOmZWZMcFaHg0jXF9HPfeaEeAqypJM5dUP0Jj48Tx3gQ_O4Onk6lOvPct04x7w_2Ne-OUWqN5RrtOmf4Zcw=s60">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Transition for dark/light mode */
+    .transition {
+      transition: background 0.3s, color 0.3s;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900 transition">
+
+  <!-- ================= Navigation Bar ================= -->
+  <nav class="sticky top-0 z-30 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
+      <!-- Brand/Logo -->
+      <a href="../../index.html">
+        <div class="flex items-center gap-2">
+          <img src="https://avatars.githubusercontent.com/u/52854320?s=120&v=4" alt="Ajeesh Apps logo"
+            class="w-8 h-8 rounded-full" />
+          <span class="font-bold text-lg dark:text-white">Ajeesh Apps</span>
+        </div>
+      </a>
+      <!-- Mobile Nav Toggle -->
+      <button id="mobileNavToggle" class="md:hidden">
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Links -->
+    <div id="mobileNav" class="md:hidden hidden px-6 py-2">
+      <a href="#home" class="block py-1 hover:text-blue-600 dark:hover:text-blue-400">Home</a>
+      <a href="#features" class="block py-1 hover:text-blue-600 dark:hover:text-blue-400">Features</a>
+      <a href="#extensions" class="block py-1 hover:text-blue-600 dark:hover:text-blue-400">Extensions</a>
+      <a href="#feedback" class="block py-1 hover:text-blue-600 dark:hover:text-blue-400">Feedback</a>
+      <a href="#contact" class="block py-1 hover:text-blue-600 dark:hover:text-blue-400">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ================= Hero Section ================= -->
+  <section id="home" class="pt-16 pb-12 bg-white dark:bg-gray-900 flex flex-col items-center text-center">
+    <img
+      src="https://lh3.googleusercontent.com/bC-8FsNpOmZWZMcFaHg0jXF9HPfeaEeAqypJM5dUP0Jj48Tx3gQ_O4Onk6lOvPct04x7w_2Ne-OUWqN5RrtOmf4Zcw=s60"
+      alt="Gmeet Kit logo" class="w-20 h-20 mb-4 mx-auto">
+    <h1 class="text-3xl md:text-5xl font-extrabold dark:text-white mb-2">Enhance Your Google Meet Experience</h1>
+    <p class="max-w-xl text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-6">
+      Take your Google Meet sessions to the next level with <span class="font-semibold">Gmeet Kit</span> — the ultimate
+      Chrome extension for productive video calls.
+    </p>
+    <a href="https://chromewebstore.google.com/detail/gmeet-kit-auto-mute-disab/mdoigaefpjglamcdlailnincbmfomlkj"
+      target="_blank"
+      class="inline-block bg-blue-600 hover:bg-blue-700 text-white text-xl font-semibold rounded-full px-8 py-3 mb-3 shadow-lg transition">
+      Install Gmeet Kit
+    </a>
+    <span class="text-gray-500 dark:text-gray-400 text-sm">No signup required – free & lightweight!</span>
+  </section>
+
+  <!-- ================= Features Section ================= -->
+  <section id="features" class="bg-gray-100 dark:bg-gray-800 py-14">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-center mb-8 dark:text-white">Key Features</h2>
+      <!-- Responsive flex grid for features -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Feature Cards with icons -->
+        <div class="bg-white dark:bg-gray-900 rounded-lg p-6 shadow flex flex-col items-center text-center">
+          <!-- Icon: Smart Settings -->
+          <svg class="h-10 w-10 mb-3 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path
+              d="M9 2l.01 1M15 2l-.01 1M6.3 4.71l.71.71M17.29 4.71l-.71.71M3 13h1m16-1h1M4.71 17.29l.71-.71M19.29 17.29l-.71-.71M12 7a5 5 0 000 10a5 5 0 000-10z"
+              stroke-width="2" />
+          </svg>
+          <h3 class="font-semibold text-lg mb-1 dark:text-white">Smart Settings</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-sm">Auto-mute, auto-camera-off, leave confirmation, and more.
+          </p>
+        </div>
+        <div class="bg-white dark:bg-gray-900 rounded-lg p-6 shadow flex flex-col items-center text-center">
+          <!-- Icon: Fancy Meeting URLs -->
+          <svg class="h-10 w-10 mb-3 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M8 17h8M8 13h8M8 9h8M5 7h14a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2V9a2 2 0 012-2z"
+              stroke-width="2" />
+          </svg>
+          <h3 class="font-semibold text-lg mb-1 dark:text-white">Fancy Meeting URLs</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-sm">Generate 10 creative meeting links at once, copy or save
+            any.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-900 rounded-lg p-6 shadow flex flex-col items-center text-center">
+          <!-- Icon: Save Meetings -->
+          <svg class="h-10 w-10 mb-3 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path
+              d="M6 19a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H6zm3-10v2a1 1 0 002 0v-2m1 5v2a1 1 0 002 0v-2"
+              stroke-width="2" />
+          </svg>
+          <h3 class="font-semibold text-lg mb-1 dark:text-white">Save Meetings</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-sm">Store your daily meeting links and access them instantly.
+          </p>
+        </div>
+        <div class="bg-white dark:bg-gray-900 rounded-lg p-6 shadow flex flex-col items-center text-center">
+          <!-- Icon: Recent Meetings -->
+          <svg class="h-10 w-10 mb-3 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M15 12a3 3 0 11-6 0a3 3 0 016 0z" />
+            <path d="M12 2v2m0 16v2m-7-7H3m18 0h-2m-2.5 7.5L16 21m-8-1.5L8 21" stroke-width="2" />
+          </svg>
+          <h3 class="font-semibold text-lg mb-1 dark:text-white">Recent Meetings</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-sm">Automatically saves last 10 meetings for quick access.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-900 rounded-lg p-6 shadow flex flex-col items-center text-center">
+          <!-- Icon: Fit Screen Mode -->
+          <svg class="h-10 w-10 mb-3 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <rect x="4" y="4" width="16" height="16" rx="2" stroke-width="2" />
+            <path d="M8 14v-4M16 14v-4M12 17v-10" stroke-width="2" />
+          </svg>
+          <h3 class="font-semibold text-lg mb-1 dark:text-white">Fit Screen Mode</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-sm">Immersive, distraction-free presentation view.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-900 rounded-lg p-6 shadow flex flex-col items-center text-center">
+          <!-- Icon: Simplicity -->
+          <svg class="h-10 w-10 mb-3 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M12 9v3l2 2m7 1a9 9 0 11-18 0 9 9 0 0118 0z" stroke-width="2" />
+          </svg>
+          <h3 class="font-semibold text-lg mb-1 dark:text-white">Simplicity & Productivity</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-sm">Lightweight design, keeps meetings productive and
+            hassle-free.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Extensions Section ================= -->
+  <section id="extensions" class="py-14 bg-white dark:bg-gray-900">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-6 dark:text-white text-center">Our Extensions</h2>
+      <p class="text-gray-600 dark:text-gray-400 text-center mb-4">
+        Gmeet Kit is the flagship extension of our product family. More coming soon!
+      </p>
+      <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+        <!-- Extension Card -->
+        <div class="bg-gray-100 dark:bg-gray-800 rounded-lg p-5 flex items-center gap-4 shadow max-w-md w-full">
+          <img
+            src="https://lh3.googleusercontent.com/bC-8FsNpOmZWZMcFaHg0jXF9HPfeaEeAqypJM5dUP0Jj48Tx3gQ_O4Onk6lOvPct04x7w_2Ne-OUWqN5RrtOmf4Zcw=s60"
+            class="w-12 h-12" alt="Gmeet Kit Logo">
+          <div>
+            <div class="font-semibold text-lg dark:text-white">Gmeet Kit</div>
+            <div class="text-gray-700 dark:text-gray-300 text-sm">Enhance your Google Meet productivity.</div>
+          </div>
+        </div>
+        <!-- More extension cards can be added here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Feedback Section ================= -->
+  <section id="feedback" class="bg-gray-100 dark:bg-gray-800 py-14">
+    <div class="max-w-2xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4 dark:text-white">We Value Your Feedback</h2>
+      <p class="mb-6 text-gray-700 dark:text-gray-300">
+        Got suggestions or issues? Help us improve by submitting feedback. Your insights drive our updates!
+      </p>
+      <!-- Feedback Form Button -->
+      <a href="https://forms.gle/jeVVhxJfhFCchHRp7" target="_blank"
+        class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition">
+        Share Feedback
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= Contact Section ================= -->
+  <section id="contact" class="py-14 bg-white dark:bg-gray-900">
+    <div class="max-w-2xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold dark:text-white mb-4">Let’s Connect</h2>
+      <p class="mb-5 text-gray-700 dark:text-gray-300">
+        Questions, collaboration ideas, or just want to say hi? Drop a line anytime.
+      </p>
+      <div class="flex items-center justify-center space-x-6 mb-2">
+        <a href="mailto:ajeeshext@gmail.com" class="underline text-blue-600 dark:text-blue-400 text-base font-semibold">
+          ajeeshext@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/ajeesh-t-a51b4a229" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg class="w-6 h-6 text-gray-400 hover:text-teal-500 dark:hover:text-teal-300 inline-block"
+            fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M4.98 3.5C3.32 3.5 2 4.82 2 6.48c0 1.63 1.33 2.98 2.98 2.98A2.98 2.98 0 008 6.48C8 4.82 6.67 3.5 4.98 3.5zM2 20h6v-9H2v9zm7.5-9h5.09v1.26h.07c.71-1.17 2.44-2.4 5.04-2.4 5.39 0 6.39 3.54 6.39 8.14V20h-6v-4.03c0-.96-.02-2.19-1.34-2.19-1.36 0-1.58 1.06-1.58 2.13V20h-6v-9z" />
+          </svg>
+        </a>
+        <a href="https://github.com/Ajeesh05" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg class="w-6 h-6 text-gray-400 hover:text-teal-500 dark:hover:text-teal-300 inline-block"
+            fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 2C6.477 2 2 6.483 2 12.013c0 4.422 2.867 8.17 6.839 9.504.5.088.682-.217.682-.482 0-.237-.008-.868-.013-1.703-2.782.604-3.37-1.344-3.37-1.344-.454-1.156-1.11-1.464-1.11-1.464-.909-.621.069-.609.069-.609 1.003.07 1.533 1.03 1.533 1.03.893 1.534 2.341 1.093 2.91.836.09-.646.35-1.092.635-1.344-2.22-.253-4.554-1.112-4.554-4.945 0-1.092.392-1.984 1.037-2.684-.104-.252-.451-1.272.098-2.654 0 0 .85-.271 2.783 1.025A9.68 9.68 0 0112 7.067c.86.004 1.724.116 2.534.34 1.935-1.296 2.783-1.025 2.783-1.025.55 1.382.203 2.402.099 2.654.646.7 1.037 1.592 1.037 2.684 0 3.841-2.337 4.688-4.566 4.937.36.308.679.919.679 1.854 0 1.338-.013 2.418-.013 2.748 0 .268.18.577.688.48A10.013 10.013 0 0022 12.013C22 6.483 17.523 2 12 2z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Footer ================= -->
+  <footer class="bg-gray-900 text-gray-300 dark:bg-black py-6 mt-8">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <div>&copy; <span id="currentYear"></span> Gmeet Kit. All rights reserved.</div>
+      <div class="flex space-x-6 mt-2 md:mt-0">
+        <!-- Social Links - placeholders, update with your handles -->
+        <a href="../../privacy.html" class="hover:text-white" aria-label="Privacy Policy">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= JS: Dark Mode & Mobile Nav ================= -->
+  <script>
+
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Dark/Light mode toggling
+    const toggleDark = document.getElementById('toggleDark');
+    const sunIcon = document.getElementById('sunIcon');
+    const moonIcon = document.getElementById('moonIcon');
+    toggleDark.addEventListener('click', function () {
+      document.body.classList.toggle('dark');
+      // Swap icons
+      if (document.body.classList.contains('dark')) {
+        sunIcon.classList.add('hidden');
+        moonIcon.classList.remove('hidden');
+      } else {
+        sunIcon.classList.remove('hidden');
+        moonIcon.classList.add('hidden');
+      }
+    });
+    // Load mode from localStorage (optional)
+    if (window.localStorage.getItem('darkMode') === 'true') {
+      document.body.classList.add('dark');
+      sunIcon.classList.add('hidden');
+      moonIcon.classList.remove('hidden');
+    }
+    toggleDark.addEventListener('click', function () {
+      window.localStorage.setItem('darkMode', document.body.classList.contains('dark'));
+    });
+
+    // Mobile nav toggling
+    const mobileNavToggle = document.getElementById('mobileNavToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    mobileNavToggle.addEventListener('click', function () {
+      mobileNav.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- ===================== END OF PAGE ===================== -->
+</body>
+
+</html>
