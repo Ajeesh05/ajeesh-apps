@@ -6,9 +6,9 @@
   <title>Ajeesh Apps – Useful Web Tools for Modern Workflows</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Tailwind CSS CDN for utility-first, responsive design -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="dist/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="https://avatars.githubusercontent.com/u/79931034?s=120&v=4">
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -42,8 +42,7 @@
       <!-- Brand/Logo -->
       <a href="index.html">
         <div class="flex items-center gap-2">
-          <img src="https://avatars.githubusercontent.com/u/79931034?s=120&v=4" alt="Ajeesh Apps logo"
-            class="w-8 h-8 rounded-full" />
+          <img src="assets/images/ajeesh-apps.png" alt="Ajeesh Apps logo" class="w-8 h-8 rounded-full" />
           <span class="font-bold text-lg dark:text-white">Ajeesh Apps</span>
         </div>
       </a>
@@ -65,8 +64,7 @@
 
   <!-- ================= Hero / Intro ================= -->
   <section id="home" class="pt-20 pb-14 flex flex-col items-center text-center bg-white dark:bg-gray-900">
-    <img src="https://avatars.githubusercontent.com/u/79931034?s=120&v=4" alt="Ajeesh avatar"
-      class="w-20 h-20 mb-4 rounded-full shadow-lg">
+    <img src="assets/images/ajeesh-apps.png" alt="Ajeesh avatar" class="w-20 h-20 mb-4 rounded-full shadow-lg">
     <h1 class="text-3xl md:text-5xl font-extrabold dark:text-white mb-3">Building Web Apps that Transform Everyday
       Browsing</h1>
     <p class="max-w-xl text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-6">
@@ -101,11 +99,12 @@
   <!-- ================= Projects / Extensions ================= -->
   <section id="projects" class="py-14 bg-white dark:bg-gray-900">
     <div class="max-w-5xl mx-auto px-4">
-      <h2 class="text-2xl font-bold mb-7 dark:text-white text-center">Featured Project</h2>
+      <h2 class="text-2xl font-bold mb-7 dark:text-white text-center">Featured Projects</h2>
+
       <div class="flex flex-col md:flex-row gap-8 justify-center items-stretch">
         <!-- Gmeet Kit Card -->
         <div
-          class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-7 flex-1 shadow hovercard flex flex-col items-center text-center">
+          class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-7 flex-1 shadow hover:scale-[1.02] transition flex flex-col items-center text-center">
           <img
             src="https://lh3.googleusercontent.com/bC-8FsNpOmZWZMcFaHg0jXF9HPfeaEeAqypJM5dUP0Jj48Tx3gQ_O4Onk6lOvPct04x7w_2Ne-OUWqN5RrtOmf4Zcw=s60"
             class="w-14 h-14 mb-2" alt="Gmeet Kit Logo">
@@ -120,10 +119,28 @@
           </a>
           <span class="text-gray-500 dark:text-gray-400 text-xs">Always free. No bloat. Just productivity.</span>
         </div>
-        <!-- Add more cards for future extensions here -->
+
+        <!-- Go Card -->
+        <div
+          class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-7 flex-1 shadow hover:scale-[1.02] transition flex flex-col items-center text-center">
+          <img
+            src="https://lh3.googleusercontent.com/hoABr40j_FAlIEYjmh2yz0iuGniZy5yzYfKGOTllEsCB1wdz5fSwvd0kkBOYF8lWcKfKER_Nd31PhZ8y5RBf8op1jg=s60"
+            class="w-14 h-14 mb-2" alt="Go Logo">
+          <div class="font-bold text-lg dark:text-white mb-1">Go</div>
+          <div class="mb-3 text-gray-700 dark:text-gray-300 text-base">
+            Go lets you instantly open your most-used websites with short, memorable shortcuts — right from the popup or
+            the Chrome address bar (omnibox).
+          </div>
+          <a href="extensions/go/"
+            class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full px-7 py-2 shadow transition mb-1">
+            Discover Go
+          </a>
+          <span class="text-gray-500 dark:text-gray-400 text-xs">Always free. No bloat. Just productivity.</span>
+        </div>
       </div>
     </div>
   </section>
+
 
   <!-- ================= Contact Section ================= -->
   <section id="contact" class="py-14 bg-gray-100 dark:bg-gray-800">
@@ -167,7 +184,7 @@
 
   <!-- ================= JS: Mobile Nav ================= -->
   <script>
-      document.getElementById('currentYear').textContent = new Date().getFullYear();
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
     // Mobile nav toggling
     const mobileNavToggle = document.getElementById('mobileNavToggle');
     const mobileNav = document.getElementById('mobileNav');

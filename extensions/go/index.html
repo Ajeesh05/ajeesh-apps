@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Go – Quickly jump to your favorite sites</title>
+    <meta name="description"
+        content="Create simple shortcuts to instantly open your most-used URLs. Go lets you open sites faster and smarter — right from the popup or Chrome address bar." />
+    <link rel="icon" href="../../assets/images/go.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../dist/style.css">
+</head>
+
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition min-h-screen">
+
+    <!-- ================= Navigation Bar ================= -->
+    <nav class="sticky top-0 z-30 bg-white dark:bg-gray-950 border-b border-gray-200 dark:border-gray-800 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
+            <!-- Brand/Logo -->
+            <a href="../../index.html">
+                <div class="flex items-center gap-2">
+                    <img src="../../assets/images/ajeesh-apps.png" alt="Ajeesh Apps logo"
+                        class="w-8 h-8 rounded-full" />
+                    <span class="font-bold text-lg dark:text-white">Ajeesh Apps</span>
+                </div>
+            </a>
+            <!-- Mobile Nav Toggle -->
+            <button id="mobileNavToggle" class="md:hidden">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Links -->
+        <div id="mobileNav" class="md:hidden hidden px-6 py-2">
+            <a href="#home" class="block py-1 hover:text-blue-600 dark:hover:text-blue-400">Home</a>
+            <a href="#features" class="block py-1 hover:text-blue-600 dark:hover:text-blue-400">Features</a>
+            <a href="#projects" class="block py-1 hover:text-blue-600 dark:hover:text-blue-400">Projects</a>
+            <a href="#feedback" class="block py-1 hover:text-blue-600 dark:hover:text-blue-400">Feedback</a>
+            <a href="#contact" class="block py-1 hover:text-blue-600 dark:hover:text-blue-400">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-16 pb-12 bg-white dark:bg-gray-900 flex flex-col items-center text-center">
+        <img src="../../assets/images/go.png" alt="Go Extension Icon" class="mx-auto mb-6 w-24 h-24" />
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+            Go – Quickly jump to your favorite sites
+        </h1>
+        <p class="text-lg max-w-2xl mx-auto mb-8">
+            Create simple shortcuts to instantly open your most-used URLs.
+            <br />Make browsing faster and smarter — right from the popup or the
+            Chrome address bar.
+        </p>
+        <a href="https://chromewebstore.google.com/detail/go-quickly-jump-to-your-f/kidndoajblclnfkndngldcajkcnjfffj"
+            target="_blank"
+            class="inline-block bg-blue-600 hover:bg-blue-700 text-white text-xl font-semibold rounded-full px-8 py-3 mb-3 shadow-lg transition">
+            Install Go
+        </a>
+        <p class="mt-4 text-sm text-gray-600 dark:text-gray-400">
+            No signup required • 100% offline • Privacy friendly
+        </p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="bg-gray-100 dark:bg-gray-800 py-14">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12">⚡ What You Can Do with Go</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-6 bg-white dark:bg-gray-950 shadow rounded-xl">
+                    <h3 class="font-semibold text-lg mb-2">🔑 Create Custom Shortcuts</h3>
+                    <p>Set a keyword (like <b>gm</b>) for any URL you visit often.</p>
+                </div>
+                <div class="p-6 bg-white dark:bg-gray-950 shadow rounded-xl">
+                    <h3 class="font-semibold text-lg mb-2">🧭 Use from Address Bar</h3>
+                    <p>Type <b>go + shortcut</b> in the omnibox to open a site instantly.</p>
+                </div>
+                <div class="p-6 bg-white dark:bg-gray-950 shadow rounded-xl">
+                    <h3 class="font-semibold text-lg mb-2">⚙️ Manage Easily</h3>
+                    <p>Add, edit, delete, or search your shortcuts directly in the popup.</p>
+                </div>
+                <div class="p-6 bg-white dark:bg-gray-950 shadow rounded-xl">
+                    <h3 class="font-semibold text-lg mb-2">🧰 Advanced Management</h3>
+                    <p>Import/export as CSV, bulk delete, and filter shortcuts with ease.</p>
+                </div>
+                <div class="p-6 bg-white dark:bg-gray-950 shadow rounded-xl">
+                    <h3 class="font-semibold text-lg mb-2">🌙 Simple & Clean Design</h3>
+                    <p>Focused on productivity with a lightweight, distraction-free UI.</p>
+                </div>
+                <div class="p-6 bg-white dark:bg-gray-950 shadow rounded-xl">
+                    <h3 class="font-semibold text-lg mb-2">🔒 Privacy First</h3>
+                    <p>Everything stays local — nothing is sent or stored online.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= Projects / Extensions ================= -->
+    <section id="projects" class="py-14 bg-white dark:bg-gray-900">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-7 dark:text-white text-center">Featured Projects</h2>
+
+            <div class="flex flex-col md:flex-row gap-8 justify-center items-stretch">
+                <!-- Gmeet Kit Card -->
+                <div
+                    class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-7 flex-1 shadow hover:scale-[1.02] transition flex flex-col items-center text-center">
+                    <img src="../../assets/images/gmeet-kit.png" class="w-14 h-14 mb-2" alt="Gmeet Kit Logo">
+                    <div class="font-bold text-lg dark:text-white mb-1">Gmeet Kit</div>
+                    <div class="mb-3 text-gray-700 dark:text-gray-300 text-base">
+                        Revamp your Google Meet calls with features like auto-mute, streamlined meeting links,
+                        attendance tracking,
+                        and distraction-free modes—all at the click of a button.
+                    </div>
+                    <a href="../../extensions/gmeet-kit/"
+                        class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full px-7 py-2 shadow transition mb-1">
+                        Discover Gmeet Kit
+                    </a>
+                    <span class="text-gray-500 dark:text-gray-400 text-xs">Always free. No bloat. Just
+                        productivity.</span>
+                </div>
+
+                <!-- Go Card -->
+                <div
+                    class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-7 flex-1 shadow hover:scale-[1.02] transition flex flex-col items-center text-center">
+                    <img src="../../assets/images/go.png" class="w-14 h-14 mb-2" alt="Go Logo">
+                    <div class="font-bold text-lg dark:text-white mb-1">Go</div>
+                    <div class="mb-3 text-gray-700 dark:text-gray-300 text-base">
+                        Go lets you instantly open your most-used websites with short, memorable shortcuts — right from
+                        the popup or
+                        the Chrome address bar (omnibox).
+                    </div>
+                    <a href="../../extensions/go/"
+                        class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full px-7 py-2 shadow transition mb-1">
+                        Discover Go
+                    </a>
+                    <span class="text-gray-500 dark:text-gray-400 text-xs">Always free. No bloat. Just
+                        productivity.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="bg-gray-100 dark:bg-gray-800 py-14">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">💬 Feedback & Suggestions</h2>
+            <p class="mb-6 text-lg">
+                We’d love to hear your thoughts! Help improve Go by sharing your
+                feedback or ideas.
+            </p>
+            <a href="https://forms.gle/ALyCF3DBLAiTetT88" target="_blank"
+                class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition">
+                👉 Share Feedback
+            </a>
+        </div>
+    </section>
+
+    <!-- ================= Contact Section ================= -->
+    <section id="contact" class="py-14 bg-white dark:bg-gray-900">
+        <div class="max-w-2xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold dark:text-white mb-4">Let’s Connect</h2>
+            <p class="mb-5 text-gray-700 dark:text-gray-300">
+                Questions, collaboration ideas, or just want to say hi? Drop a line anytime.
+            </p>
+            <div class="flex items-center justify-center space-x-6 mb-2">
+                <a href="mailto:ajeeshext@gmail.com"
+                    class="underline text-blue-600 dark:text-blue-400 text-base font-semibold">
+                    ajeeshext@gmail.com
+                </a>
+                <a href="https://www.linkedin.com/in/ajeesh-t-a51b4a229" target="_blank" rel="noopener"
+                    aria-label="LinkedIn">
+                    <svg class="w-6 h-6 text-gray-400 hover:text-teal-500 dark:hover:text-teal-300 inline-block"
+                        fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M4.98 3.5C3.32 3.5 2 4.82 2 6.48c0 1.63 1.33 2.98 2.98 2.98A2.98 2.98 0 008 6.48C8 4.82 6.67 3.5 4.98 3.5zM2 20h6v-9H2v9zm7.5-9h5.09v1.26h.07c.71-1.17 2.44-2.4 5.04-2.4 5.39 0 6.39 3.54 6.39 8.14V20h-6v-4.03c0-.96-.02-2.19-1.34-2.19-1.36 0-1.58 1.06-1.58 2.13V20h-6v-9z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/Ajeesh05" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg class="w-6 h-6 text-gray-400 hover:text-teal-500 dark:hover:text-teal-300 inline-block"
+                        fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2C6.477 2 2 6.483 2 12.013c0 4.422 2.867 8.17 6.839 9.504.5.088.682-.217.682-.482 0-.237-.008-.868-.013-1.703-2.782.604-3.37-1.344-3.37-1.344-.454-1.156-1.11-1.464-1.11-1.464-.909-.621.069-.609.069-.609 1.003.07 1.533 1.03 1.533 1.03.893 1.534 2.341 1.093 2.91.836.09-.646.35-1.092.635-1.344-2.22-.253-4.554-1.112-4.554-4.945 0-1.092.392-1.984 1.037-2.684-.104-.252-.451-1.272.098-2.654 0 0 .85-.271 2.783 1.025A9.68 9.68 0 0112 7.067c.86.004 1.724.116 2.534.34 1.935-1.296 2.783-1.025 2.783-1.025.55 1.382.203 2.402.099 2.654.646.7 1.037 1.592 1.037 2.684 0 3.841-2.337 4.688-4.566 4.937.36.308.679.919.679 1.854 0 1.338-.013 2.418-.013 2.748 0 .268.18.577.688.48A10.013 10.013 0 0022 12.013C22 6.483 17.523 2 12 2z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= Footer ================= -->
+    <footer class="bg-gray-900 text-gray-300 dark:bg-black py-6 mt-8">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div>&copy; <span id="currentYear"></span> Ajeesh Apps. Crafted with passion in code.</div>
+            <div class="flex space-x-6 mt-2 md:mt-0">
+                <a href="../../privacy.html" class="hover:text-white" aria-label="Privacy Policy">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Year
+        document.getElementById("currentYear").textContent =
+            new Date().getFullYear();
+
+        // Mobile Nav Toggle
+        const toggle = document.getElementById("mobileNavToggle");
+        const nav = document.getElementById("mobileNav");
+        toggle.addEventListener("click", () => nav.classList.toggle("hidden"));
+    </script>
+</body>
+
+</html>

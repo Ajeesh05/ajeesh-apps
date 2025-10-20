@@ -6,12 +6,12 @@
   <title>Gmeet Kit – Enhance Your Google Meet Experience</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Tailwind CSS CDN for rapid styling -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../../dist/style.css">
   <!-- Google Fonts for professional typography -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <!-- Favicon placeholder -->
   <link rel="icon"
-    href="https://lh3.googleusercontent.com/bC-8FsNpOmZWZMcFaHg0jXF9HPfeaEeAqypJM5dUP0Jj48Tx3gQ_O4Onk6lOvPct04x7w_2Ne-OUWqN5RrtOmf4Zcw=s60">
+    href="../../assets/images/gmeet-kit.png">
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -24,15 +24,15 @@
   </style>
 </head>
 
-<body class="bg-gray-50 text-gray-900 transition">
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition min-h-screen">
 
   <!-- ================= Navigation Bar ================= -->
-  <nav class="sticky top-0 z-30 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 shadow-sm">
+  <nav class="sticky top-0 z-30 bg-white dark:bg-gray-950 border-b border-gray-200 dark:border-gray-800 shadow-sm">
     <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
       <!-- Brand/Logo -->
       <a href="../../index.html">
         <div class="flex items-center gap-2">
-          <img src="https://avatars.githubusercontent.com/u/79931034?s=120&v=4" alt="Ajeesh Apps logo"
+          <img src="../../assets/images/ajeesh-apps.png" alt="Ajeesh Apps logo"
             class="w-8 h-8 rounded-full" />
           <span class="font-bold text-lg dark:text-white">Ajeesh Apps</span>
         </div>
@@ -48,7 +48,7 @@
     <div id="mobileNav" class="md:hidden hidden px-6 py-2">
       <a href="#home" class="block py-1 hover:text-blue-600 dark:hover:text-blue-400">Home</a>
       <a href="#features" class="block py-1 hover:text-blue-600 dark:hover:text-blue-400">Features</a>
-      <a href="#extensions" class="block py-1 hover:text-blue-600 dark:hover:text-blue-400">Extensions</a>
+      <a href="#projects" class="block py-1 hover:text-blue-600 dark:hover:text-blue-400">Projects</a>
       <a href="#feedback" class="block py-1 hover:text-blue-600 dark:hover:text-blue-400">Feedback</a>
       <a href="#contact" class="block py-1 hover:text-blue-600 dark:hover:text-blue-400">Contact</a>
     </div>
@@ -57,7 +57,7 @@
   <!-- ================= Hero Section ================= -->
   <section id="home" class="pt-16 pb-12 bg-white dark:bg-gray-900 flex flex-col items-center text-center">
     <img
-      src="https://lh3.googleusercontent.com/bC-8FsNpOmZWZMcFaHg0jXF9HPfeaEeAqypJM5dUP0Jj48Tx3gQ_O4Onk6lOvPct04x7w_2Ne-OUWqN5RrtOmf4Zcw=s60"
+      src="../../assets/images/gmeet-kit.png"
       alt="Gmeet Kit logo" class="w-20 h-20 mb-4 mx-auto">
     <h1 class="text-3xl md:text-5xl font-extrabold dark:text-white mb-2">Enhance Your Google Meet Experience</h1>
     <p class="max-w-xl text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-6">
@@ -142,40 +142,62 @@
     </div>
   </section>
 
-  <!-- ================= Extensions Section ================= -->
-  <section id="extensions" class="py-14 bg-white dark:bg-gray-900">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl font-bold mb-6 dark:text-white text-center">Our Extensions</h2>
-      <p class="text-gray-600 dark:text-gray-400 text-center mb-4">
-        Gmeet Kit is the flagship extension of our product family. More coming soon!
-      </p>
-      <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
-        <!-- Extension Card -->
-        <div class="bg-gray-100 dark:bg-gray-800 rounded-lg p-5 flex items-center gap-4 shadow max-w-md w-full">
+  <!-- ================= Projects / Extensions ================= -->
+  <section id="projects" class="py-14 bg-white dark:bg-gray-900">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-7 dark:text-white text-center">Featured Projects</h2>
+
+      <div class="flex flex-col md:flex-row gap-8 justify-center items-stretch">
+        <!-- Gmeet Kit Card -->
+        <div
+          class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-7 flex-1 shadow hover:scale-[1.02] transition flex flex-col items-center text-center">
           <img
-            src="https://lh3.googleusercontent.com/bC-8FsNpOmZWZMcFaHg0jXF9HPfeaEeAqypJM5dUP0Jj48Tx3gQ_O4Onk6lOvPct04x7w_2Ne-OUWqN5RrtOmf4Zcw=s60"
-            class="w-12 h-12" alt="Gmeet Kit Logo">
-          <div>
-            <div class="font-semibold text-lg dark:text-white">Gmeet Kit</div>
-            <div class="text-gray-700 dark:text-gray-300 text-sm">Enhance your Google Meet productivity.</div>
+            src="../../assets/images/gmeet-kit.png"
+            class="w-14 h-14 mb-2" alt="Gmeet Kit Logo">
+          <div class="font-bold text-lg dark:text-white mb-1">Gmeet Kit</div>
+          <div class="mb-3 text-gray-700 dark:text-gray-300 text-base">
+            Revamp your Google Meet calls with features like auto-mute, streamlined meeting links, attendance tracking,
+            and distraction-free modes—all at the click of a button.
           </div>
+          <a href="../../extensions/gmeet-kit/"
+            class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full px-7 py-2 shadow transition mb-1">
+            Discover Gmeet Kit
+          </a>
+          <span class="text-gray-500 dark:text-gray-400 text-xs">Always free. No bloat. Just productivity.</span>
         </div>
-        <!-- More extension cards can be added here -->
+
+        <!-- Go Card -->
+        <div
+          class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-7 flex-1 shadow hover:scale-[1.02] transition flex flex-col items-center text-center">
+          <img
+            src="../../assets/images/go.png"
+            class="w-14 h-14 mb-2" alt="Go Logo">
+          <div class="font-bold text-lg dark:text-white mb-1">Go</div>
+          <div class="mb-3 text-gray-700 dark:text-gray-300 text-base">
+            Go lets you instantly open your most-used websites with short, memorable shortcuts — right from the popup or
+            the Chrome address bar (omnibox).
+          </div>
+          <a href="../../extensions/go/"
+            class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full px-7 py-2 shadow transition mb-1">
+            Discover Go
+          </a>
+          <span class="text-gray-500 dark:text-gray-400 text-xs">Always free. No bloat. Just productivity.</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ================= Feedback Section ================= -->
+  <!-- Feedback Section -->
   <section id="feedback" class="bg-gray-100 dark:bg-gray-800 py-14">
-    <div class="max-w-2xl mx-auto px-4 text-center">
-      <h2 class="text-2xl font-bold mb-4 dark:text-white">We Value Your Feedback</h2>
-      <p class="mb-6 text-gray-700 dark:text-gray-300">
-        Got suggestions or issues? Help us improve by submitting feedback. Your insights drive our updates!
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">💬 Feedback & Suggestions</h2>
+      <p class="mb-6 text-lg">
+        We’d love to hear your thoughts! Help improve Go by sharing your
+        feedback or ideas.
       </p>
-      <!-- Feedback Form Button -->
       <a href="https://forms.gle/jeVVhxJfhFCchHRp7" target="_blank"
-        class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition">
-        Share Feedback
+        class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition">
+        👉 Share Feedback
       </a>
     </div>
   </section>
@@ -212,9 +234,8 @@
   <!-- ================= Footer ================= -->
   <footer class="bg-gray-900 text-gray-300 dark:bg-black py-6 mt-8">
     <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-      <div>&copy; <span id="currentYear"></span> Gmeet Kit. All rights reserved.</div>
+      <div>&copy; <span id="currentYear"></span> Ajeesh Apps. Crafted with passion in code.</div>
       <div class="flex space-x-6 mt-2 md:mt-0">
-        <!-- Social Links - placeholders, update with your handles -->
         <a href="../../privacy.html" class="hover:text-white" aria-label="Privacy Policy">Privacy Policy</a>
       </div>
     </div>
@@ -224,31 +245,6 @@
   <script>
 
     document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-    // Dark/Light mode toggling
-    const toggleDark = document.getElementById('toggleDark');
-    const sunIcon = document.getElementById('sunIcon');
-    const moonIcon = document.getElementById('moonIcon');
-    toggleDark.addEventListener('click', function () {
-      document.body.classList.toggle('dark');
-      // Swap icons
-      if (document.body.classList.contains('dark')) {
-        sunIcon.classList.add('hidden');
-        moonIcon.classList.remove('hidden');
-      } else {
-        sunIcon.classList.remove('hidden');
-        moonIcon.classList.add('hidden');
-      }
-    });
-    // Load mode from localStorage (optional)
-    if (window.localStorage.getItem('darkMode') === 'true') {
-      document.body.classList.add('dark');
-      sunIcon.classList.add('hidden');
-      moonIcon.classList.remove('hidden');
-    }
-    toggleDark.addEventListener('click', function () {
-      window.localStorage.setItem('darkMode', document.body.classList.contains('dark'));
-    });
 
     // Mobile nav toggling
     const mobileNavToggle = document.getElementById('mobileNavToggle');

@@ -1,0 +1,30 @@
+# === Node & Package Files ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# === Environment & Local Config ===
+.env
+.env.local
+.env.*.local
+
+# === Build Caches ===
+.pnp.*
+.pnp.js
+.cache/
+.postcss-cache/
+tailwind.config.js.timestamp
+
+# === System Files ===
+.DS_Store
+Thumbs.db
+
+# === Editor & OS ===
+.vscode/
+.idea/
+*.swp
+
+# === Optional (Safe to Keep in Repo) ===
+# dist/  <-- KEEP dist/ so GitHub Pages can serve your built CSS
