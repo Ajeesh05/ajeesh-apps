@@ -14,7 +14,7 @@
 
 <body id="t" class="offline">
     <div id="messageBox" class="sendmessage">
-        <h1 style="text-align: center;font-family: 'Open Sans', sans-serif;">Press Space to start</h1>
+        <h1 id="startMsg" style="text-align: center;font-family: 'Open Sans', sans-serif;">Press Space to start</h1>
         <div class="niokbutton" onclick="okbuttonsend()"></div>
     </div>
     <div id="main-frame-error" class="interstitial-wrapper">
@@ -34,6 +34,15 @@
             </template>
         </div>
     </div>
+    <script>debugger;
+        const isTouchDevice =
+            "ontouchstart" in window || navigator.maxTouchPoints > 0;
+
+        document.getElementById("startMsg").textContent = isTouchDevice
+            ? "Click anywhere to start"
+            : "Press Space to start";
+
+    </script>
 </body>
 
 </html>
